@@ -345,8 +345,6 @@ function AdminPage() {
 
   const totalFiltered = pagination?.total ?? 0;
   const totalPages = pagination?.total_pages ?? 0;
-  const canGoPrev = page > 1;
-  const canGoNext = totalPages > 0 && page < totalPages;
   const showingRange = useMemo(() => {
     if (totalFiltered === 0 || areas.length === 0) return null;
     const start = (page - 1) * limit + 1;

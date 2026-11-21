@@ -163,8 +163,6 @@ export default function AdminRfidPage() {
 
   const total = meta?.total ?? null
   const totalPages = meta?.total_pages ?? null
-  const canGoPrev = page > 1
-  const canGoNext = totalPages != null ? page < totalPages : items.length === limit
 
   const showingRange = useMemo(() => {
     if (total == null || items.length === 0) return null

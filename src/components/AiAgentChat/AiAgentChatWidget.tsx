@@ -265,7 +265,7 @@ export default function AiAgentChatWidget() {
                 pending,
               },
               items,
-            },
+            } as ChatMessage['payload'],
           }
         }),
       )

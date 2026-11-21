@@ -106,8 +106,6 @@ export default function RfidRequestManagementPage() {
 
   const total = meta?.total ?? null
   const totalPages = meta?.total_pages ?? null
-  const canGoPrev = page > 1
-  const canGoNext = totalPages != null ? page < totalPages : rows.length === limit
 
   const showingRange = useMemo(() => {
     if (total == null || rows.length === 0) return null

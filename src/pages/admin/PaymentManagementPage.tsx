@@ -177,8 +177,6 @@ export default function PaymentManagementPage() {
 
   const total = meta?.total ?? null
   const totalPages = meta?.total_pages ?? null
-  const canGoPrev = page > 1
-  const canGoNext = totalPages != null ? page < totalPages : payments.length === limit
 
   const showingRange = useMemo(() => {
     if (total == null || payments.length === 0) return null
