@@ -3,7 +3,9 @@
 > **A Scalable and Resource-Efficient Smart Parking Platform with a Local LLM-Powered AI Assistant**
 > Graduation thesis, B.Sc. Computer Science, VNUK Institute (The University of Da Nang), 2026
 
-**Live demo:** [smart-parking-ui.pages.dev](https://smart-parking-ui.pages.dev) · **Backend repo:** [smart-parking-server](https://github.com/VinhPham131/smart-parking-server)
+**Live demo:** [smart-parking-ui.pages.dev](https://smart-parking-ui.pages.dev) · **Video demo:** [YouTube](https://www.youtube.com/watch?v=_lfnuo5X2wM) · **Backend repo:** [smart-parking-server](https://github.com/VinhPham131/smart-parking-server)
+
+[![Video demo](https://img.youtube.com/vi/_lfnuo5X2wM/hqdefault.jpg)](https://www.youtube.com/watch?v=_lfnuo5X2wM)
 
 ---
 
@@ -12,6 +14,28 @@
 Smart Parking automates how a parking facility runs. At the gate, an **ESP32 RFID reader** and a **camera with YOLO + OCR license plate recognition** check every vehicle before the barrier opens. Behind the gate, this web app gives drivers a self-service portal and gives operators a real-time control center. Admins also have an **AI assistant**, running on a local LLM, that answers operational questions and carries out actions from plain-language requests.
 
 This repository contains the **React web application**. The API, IoT integration, OCR service and AI agent are in the [backend repository](https://github.com/VinhPham131/smart-parking-server), which also explains the full architecture.
+
+## Screenshots
+
+**Admin dashboard:** live status of every parking area
+
+![Admin dashboard](docs/screenshots/admin-dashboard.jpg)
+
+**Parking history:** each entry and exit, with the plate photo the gate camera took
+
+![Parking history](docs/screenshots/admin-parking-history.jpg)
+
+**Reservations:** review and approve drivers' bookings
+
+![Reservations](docs/screenshots/admin-reservations.jpg)
+
+**Driver portal:** book a slot and check how many spaces are free
+
+![Driver portal](docs/screenshots/driver-home.jpg)
+
+**AI assistant:** ask in plain language, then approve reservations straight from the chat
+
+<p align="center"><img src="docs/screenshots/ai-assistant.jpg" width="60%" alt="AI assistant" /></p>
 
 ## Features
 
